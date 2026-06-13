@@ -1,7 +1,18 @@
 # Solar Radiation Prediction Using Neural Networks
 
 ## Problem
-Predict solar radiation (W/m²) 5 minutes to 2 hours in advance using historical weather data.
+## Problem Statement
+
+Solar energy is intermittent. When clouds block the sun, power output can drop 50-80% within minutes. Grid operators cannot react fast enough, forcing them to keep expensive backup power plants running or risk blackouts.
+
+**The Goal:** Predict solar radiation 5 minutes to 2 hours in advance so grid operators can prepare.
+
+**The Solution:** A 4-layer neural network (128→64→32→16→1) trained on historical weather data including temperature, humidity, pressure, wind, and previous radiation values.
+
+**The Result:** R² = 0.9366, meaning the model explains 93.7% of solar radiation variance.
+
+**The Impact:** Grid operators can reduce backup power costs, prevent blackouts, and maximize solar energy utilization.
+
 
 ## Dataset
 - 32,686 samples at 5-minute intervals
